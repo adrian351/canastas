@@ -1,0 +1,1 @@
+<td>{{ $armado->nom }} ({{ $armado->sku }}){{ $armado->id }}</td>
