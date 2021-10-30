@@ -27,7 +27,12 @@
             <td>{{ $usuario->email_registro }}</td>
             <td>{{ $usuario->email }}</td>
             {{-- linea comentada por marcar error --}}
-            <td>{{ $usuario->getRoleNom()->implode(', ') }}</td>
+            <td>{{ $usuario->getRoleNames()->implode(', ') }}</td>
+            {{--  <td>
+              @foreach ($usuario->roles as $rol)
+                {{ $rol->nom.", " }}
+              @endforeach
+            </td>  --}}
             {{-- <!-- Funcion declarada en Spatie\Permission\Traits\HasRole --> --}}
             @include('usuario.usu_tableOpciones') 
           </tr>

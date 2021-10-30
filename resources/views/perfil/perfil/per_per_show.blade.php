@@ -9,7 +9,8 @@
     </div>
     <h3 class="profile-username text-center">{{ Auth::user()->nom . ' ' . Auth::user()->apell }}</h3>
     <p class="text-muted text-center">
-      {{ Auth::user()->getRoleNom()->implode(', ') }}<br> <!-- Funcion declarada en Spatie\Permission\Traits\HasRole -->
+      {{--  <!-- Funcion declarada en Spatie\Permission\Traits\HasRole -->  --}}
+      {{ Auth::user()->getRoleNom()->implode(', ') }}<br> 
       {{ Auth::user()->email }}<br>
       {{ __('Fecha de registro') }} {{ Auth::user()->created_at->isoFormat('lll') }}<br>
       {{ __('Último inicio de sesión') }} {{ Auth::user()->last_login }}<br>

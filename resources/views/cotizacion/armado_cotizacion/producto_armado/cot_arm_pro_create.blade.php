@@ -79,5 +79,5 @@
     }
   });
 
-  </script>
-  @endsection
+</script>
+@endsection
