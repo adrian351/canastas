@@ -27,12 +27,14 @@
             <td>{{ $cliente->email_registro }}</td>
             <td>{{ $cliente->email }}</td>
             {{-- linea comentada por marcar error --}}
-            <td>{{ $cliente->getRoleNames()->implode(', ') }}</td> 
-            {{--  <td>
-                @foreach ($cliente->roles as $rol)
+            <td>
+              {{-- {{ $cliente->getRoleNames()->implode(', ') }} --}}
+
+              @foreach ($cliente->roles as $rol)
                   {{ $rol->nom }}
                 @endforeach
-            </td>  --}}
+            </td> 
+            
             {{-- <!-- Funcion declarada en Spatie\Permission\Traits\HasRole --> --}}
             @include('cliente.cli_tableOpciones') 
           </tr>

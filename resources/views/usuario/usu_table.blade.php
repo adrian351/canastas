@@ -27,7 +27,12 @@
             <td>{{ $usuario->email_registro }}</td>
             <td>{{ $usuario->email }}</td>
             {{-- linea comentada por marcar error --}}
-            <td>{{ $usuario->getRoleNames()->implode(', ') }}</td>
+            <td>
+              {{-- {{ $usuario->getRoleNames()->implode(', ') }} --}}
+              @foreach ($usuario->roles as $rol)
+                {{ $rol->nom.", " }}
+              @endforeach
+            </td>
             {{--  <td>
               @foreach ($usuario->roles as $rol)
                 {{ $rol->nom.", " }}

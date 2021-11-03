@@ -21,11 +21,11 @@ use App\Repositories\proveedor\ProveedorRepositories;
   use App\Repositories\armado\ArmadoRepositories;
 use App\Repositories\cotizacion\CotizacionRepositories;
 use App\Models\Cotizacion;
-use App\Models\Armado;
+// use App\Models\Armado;
 
 // importar las categorias
 use App\Http\Controllers\Categoria\CategoriaController;
-use App\Http\Controllers\SubCategoria\SubCategoriaController;
+use App\Http\Controllers\subCategoria\SubCategoriaController;
 
 class ProductoController extends Controller {
   protected $serviceCrypt;
